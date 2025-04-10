@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>webpage</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #cce0ff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #003366;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0056b3;
+}
+
+section {
+  padding: 50px 40px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  height: 8px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #3399ff;
+}
+
+.projects-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.project {
+  background-color: #e6f0ff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 45%;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #cce0ff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+}
+</style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">myPortfolio</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h1>Hello! I am Deekshita</h1>
+      <p>currently pursuing 2nd year btech in CBIT prodattur.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="personal-info">
+          <p><strong>Name:</strong> K. Deekshita</p>
+          <p><strong>Date of Birth:</strong> 07/10/2006</p>
+          <p><strong>Gender:</strong> Female</p>
+          <p><strong>Address:</strong> Kadapa, Andhra Pradesh</p>
+          <p><strong>Zip code:</strong> 516001</p>
+        </div>
+
+        <div class="skills-info">
+          <div class="skill">
+            <p>MS EXCEL</p>
+            <div class="skill-bar">
+              <div class="skill-level" style="width:80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Java</p>
+            <div class="skill-bar">
+              <div class="skill-level" style="width:70%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Python</p>
+            <div class="skill-bar">
+              <div class="skill-level" style="width:90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Students Development Program on Python</h3>
+          <p>A course offered by ExcelR, an E-Learning platform.</p>
+        </div>
+        <div class="project">
+          <h3>CV and Resume Building on AICTE EduSkills Internship</h3>
+          <p>Developed skills in creating effective resumes and CVs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> 63xxxxx89</p>
+        <p><strong>Email:</strong> deekshithakoparthi@gmail.com</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deekshita07" target="_blank">linkedin.com/in/deekshita07</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 myPortfolio. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
